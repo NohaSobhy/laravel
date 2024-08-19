@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TrackController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,3 +11,4 @@ Route::get('/', function () {
 
 Route::resource('tracks',TrackController::class);
 Route::resource('courses',CourseController::class);
+Route::resource('students',StudentController::class);
